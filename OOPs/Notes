@@ -42,3 +42,10 @@ Dunder method (__init__), double underscore built in methods, is also a conventi
 4. Polymorphism - many forms
 it refers to the way in which object classes can share same method name but those method names can act differently based on which object calls them
 
+Pure function:
+A pure function has two rules:
+1. Given the same input, it will always return the same output 
+2. Function should not produce any side effects.
+
+What are side effects?
+Side effects are things that a function does that affect the outside world. For example, if we print something inside of this function, it affects the outside world, as we are printing something onto a screen, which is the outside world. Or, for example, if the function is interacting with a variable that is creeated outside of the function.
