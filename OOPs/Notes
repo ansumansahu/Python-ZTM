@@ -49,3 +49,8 @@ A pure function has two rules:
 
 What are side effects?
 Side effects are things that a function does that affect the outside world. For example, if we print something inside of this function, it affects the outside world, as we are printing something onto a screen, which is the outside world. Or, for example, if the function is interacting with a variable that is creeated outside of the function.
+
+In Python, functions are first class objects that mean that functions in Python can be used or passed as arguments. This power of functions is used by decorators
+
+Decorators:
+Decorators allows programmers to modify the behaviour of function/class or add extra functuanality to our function. Decorators allow us to wrap another function in order to extend the behaviour of the wrapped function, without permanently modifying it.
