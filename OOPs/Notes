@@ -19,6 +19,9 @@ When to use list or when to use dictionaries:
 
 Dictionary is an unordered key-value pair. Not next to each other in memory.
 
+Object Oriented programming (OOP):
+OOP is a programming paradigm that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects. There are many object-oriented programming languages including JavaScript, C++, Java, and Python.
+
 The 4 Pillars of OOP's:
 1. Encapsulation - binding of data and functions that manipulates that data and we encapsulate into one big object which users,machines can interact. The data and functions are nothing but attributes and methods used for objects in the class
 
@@ -52,5 +55,14 @@ Side effects are things that a function does that affect the outside world. For 
 
 In Python, functions are first class objects that mean that functions in Python can be used or passed as arguments. This power of functions is used by decorators
 
+Higher order function (HOC)
+A function is a HOC if :
+1. it accepts another function inside it's parameters, or
+2. it returns another function
+
 Decorators:
-Decorators allows programmers to modify the behaviour of function/class or add extra functuanality to our function. Decorators allow us to wrap another function in order to extend the behaviour of the wrapped function, without permanently modifying it.
+Decorators allows programmers to modify the behaviour of function/class or add extra functuanality to our function. It's simply a function that wraps another function and enhances it or changes it, without permanently modifying it.
+
+Generators:
+Generators are available in Python and allow us to generate a sequence of values over time.
+Every genrator is a iterable but not vice versa.
