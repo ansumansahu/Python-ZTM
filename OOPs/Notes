@@ -66,3 +66,8 @@ Decorators allows programmers to modify the behaviour of function/class or add e
 Generators:
 Generators are available in Python and allow us to generate a sequence of values over time.
 Every genrator is a iterable but not vice versa.
+
+Array VS List:
+Lists in Python are what we call dynamic. That is, any time we need data into a list, we can make it as big as we want. We can just incrementally increase this list and fill up our memory.
+
+Arrays that Python gives us actually take up less memory and perform faster. So if you have a large list and let's say you don't want to use generators, you can improve it with an array. And that is because when we create an array, it sets how much memory we can use in our machine.
