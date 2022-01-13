@@ -7,21 +7,21 @@ import sys
 import random
 start=int(sys.argv[1])
 end=int(sys.argv[2])
- 
+
 answer=random.randint(start,end)
 
 guess=int(input(f'Guess a number between {start}-{end}: '))
 number_of_guess=1
 already_guessed=[]
 while guess not in already_guessed and 0<guess<end+1:
-    already_guessed.append(guess)
     if guess==answer:
         print(f'Correct Answer in {number_of_guess} guesses')
-        print(f'Guesses before getting the answer: {already_guessed}')
         break
-    number_of_guess+=1
+    already_guessed.append(guess)
     guess=int(input(f'Guess a number between {start}-{end}: '))
+    number_of_guess+=1
 
+# print(f'Guesses before getting the answer: {already_guessed}')
 # To run type the following in terminal with directory same as file directory
 # python .\guessing_game.py 1 10
 
@@ -36,13 +36,13 @@ while guess not in already_guessed and 0<guess<end+1:
 
 # while True:
 #     try:
-#         guess = int(input(f'guess a number {sys.argv[1]}~{sys.argv[2]}:  '))
-#         if  0 < guess < 11:
+#         guess = int(input(f'guess a number {sys.argv[1]}-{sys.argv[2]}:  '))
+#         if  0 < guess < 6:
 #             if guess == answer:
 #                 print('you are a genius!')
 #                 break
 #         else:
-#             print('hey bozo, I said 1~10')
+#             print('Hey, I said between 1-6')
 #     except ValueError:
 #         print('please enter a number')
 #         continue
