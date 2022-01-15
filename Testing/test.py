@@ -32,5 +32,8 @@ class TestMain(unittest.TestCase):
         result=main.do_stuff(test_param)
         self.assertEqual(result,'Please enter a number')
 
+    def tearDown(self):
+        print('Cleaning Up')
+
 if __name__=='__main__':
     unittest.main()
