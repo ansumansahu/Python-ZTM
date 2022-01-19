@@ -1,0 +1,76 @@
+Python Interpreter:
+Function which changes user written code/source code to machine understandable binary code. Intrepreter unlike a compiler which reads the whole program at once, changes a code statement by statement.
+
+DataTypes:Int/Float/String/Boolean/Lists/Tuple/Sets/Dictionary
+There is a seperate datatype float which is different from int even though the information stored is integers because simply put float needs more memory space as decimels are also used.
+
+Lists:
+Suppose we create a list of items we wish to purchase from amazon:
+amazon_cart=['item1','item2',...]
+Now we want to copy the items to a new cart
+If we do, new_cart = amazon_cart ,this means that we are simply saying new_cart to fetch items present in the memory of amazon_cart and if later on change contents of new_cart we are also changing the contents in memory itself i.e in amazon_cart
+
+To avoid this, we rather do new_cart=amazon_cart[:], this implies we are creating a copy of amazon_cart to a new list new_cart which has it's separate memory to store it's items.
+
+Dictionaries:
+When to use list or when to use dictionaries:
+-> dict has no order so that maybe a factor
+-> dict can hold more information than a list
+
+Dictionary is an unordered key-value pair. Not next to each other in memory.
+
+Object Oriented programming (OOP):
+OOP is a programming paradigm that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects. There are many object-oriented programming languages including JavaScript, C++, Java, and Python.
+
+The 4 Pillars of OOP's:
+1. Encapsulation - binding of data and functions that manipulates that data and we encapsulate into one big object which users,machines can interact. The data and functions are nothing but attributes and methods used for objects in the class
+
+2. Abstraction - hiding of unneccessary informations and only providing access to required information for the user/machine. Everything else is kept hidden underneath
+
+Notes:
+Suppose de make a class 'ClassName' and give it name attribute. We then create an object for the class by instantiation:
+object= ClassName(Name,..other attr..)
+
+If later on user modifies the attribute by saying something like this:
+object.name='Something'
+
+Now this changes/overwrites the attribute from Name to Something. Now abstraction is pretty cool but not if anyone can overwrite the object(here player). Sure if we instantiate (i.e player=PlayerCharacter(..)) then it'll still work but the details for a specific object is changed .. not something we want to happen
+
+Python doesn't allow privacy like java or any other language so we generally give attributes like this self._name and self._age just we let user/machine know it's not something it should alter/change. It can still be changed but _attribute lets others know it shouldn't be changed.
+
+Dunder method (__init__), double underscore built in methods, is also a convention to let users know it shouldn't alter
+
+3. Inheritance - allows new objects to take on the properties of existing objects or classes
+
+4. Polymorphism - many forms
+it refers to the way in which object classes can share same method name but those method names can act differently based on which object calls them
+
+Pure function:
+A pure function has two rules:
+1. Given the same input, it will always return the same output 
+2. Function should not produce any side effects.
+
+What are side effects?
+Side effects are things that a function does that affect the outside world. For example, if we print something inside of this function, it affects the outside world, as we are printing something onto a screen, which is the outside world. Or, for example, if the function is interacting with a variable that is creeated outside of the function.
+
+In Python, functions are first class objects that mean that functions in Python can be used or passed as arguments. This power of functions is used by decorators
+
+Higher order function (HOC)
+A function is a HOC if :
+1. it accepts another function inside it's parameters, or
+2. it returns another function
+
+Decorators:
+Decorators allows programmers to modify the behaviour of function/class or add extra functuanality to our function. It's simply a function that wraps another function and enhances it or changes it, without permanently modifying it.
+
+Generators:
+Generators are available in Python and allow us to generate a sequence of values over time.
+Every genrator is a iterable but not vice versa.
+
+Array VS List:
+Lists in Python are what we call dynamic. That is, any time we need data into a list, we can make it as big as we want. We can just incrementally increase this list and fill up our memory.
+
+Arrays that Python gives us actually take up less memory and perform faster. So if you have a large list and let's say you don't want to use generators, you can improve it with an array. And that is because when we create an array, it sets how much memory we can use in our machine.
+
+Hashing:
+Hash function basically generates a random value of fixed length when an input is given.
