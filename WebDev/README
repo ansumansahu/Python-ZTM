@@ -1,14 +1,16 @@
-TO CREATE VIRTUAL ENV.:
+1. TO CREATE VIRTUAL ENV.:
 -> python 3 -m venv venv
 
-TO GIVE PERMISSION:
+2. TO GIVE PERMISSION:
 -> Set-ExecutionPolicy -ExecutionPolicy unrestricted -Scope CurrentUser
 
-TO ACTIVATE:
+3. TO ACTIVATE:
 -> venv\Scripts\Activate.ps1 (or)
 -> venv\Scripts\activate 
 
-Syntax For Running Flask:
+4. BEFORE RUNNING FLASK CHANGE DIRECTORY TO VENV FOR FLASK_APP TO GRAB MAINSERVER
+
+5. TO RUN Flask:
 -> pip install Flask
 -> $env:FLASK_APP="mainserver"
 -> $env:FLASK_ENV="development"
