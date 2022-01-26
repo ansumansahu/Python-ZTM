@@ -88,3 +88,22 @@ Arrays that Python gives us actually take up less memory and perform faster. So 
 
 Hashing:
 Hash function basically generates a random value of fixed length when an input is given.
+
+FLASK (For BackEnd):
+
+Syntax For Initially Setting & Activating The Virtual Environment:
+TO CREATE VIRTUAL ENV.:
+-> python 3 -m venv venv
+
+TO GIVE PERMISSION:
+-> Set-ExecutionPolicy -ExecutionPolicy unrestricted -Scope CurrentUser
+
+TO ACTIVATE:
+-> venv\Scripts\Activate.ps1 (or)
+-> venv\Scripts\activate 
+
+Syntax For Running Flask:
+-> pip install Flask
+-> $env:FLASK_APP="mainserver"
+-> $env:FLASK_ENV="development"
+-> flask run
