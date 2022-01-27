@@ -1,0 +1,15 @@
+# Machine Learning Steps
+# 1 - Import the data
+# 2 - Clean the data
+# 3 - Split data. Training Set/Test Set
+# 4 - Create a Model 
+# 5 - Check the output
+# 6 - Improve
+
+# Important Tools:
+# 1-NumPy ( for working with arrays and lists )
+# 2-pandas ( for working with csv files or datasets or modifying them )
+# 3-scikit-learn ( for importing necessayr algorithms/models/functions )
+# 4-matplotlib ( for visualising our data )
+# 5-jupiter notebooks ( environment to code )
+# 6-kaggle ( ml and ds community /free access to datasets /compete /much more )
